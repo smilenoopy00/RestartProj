@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+/*
+	조상 중에 ul을 가지는 ul들을 선택 즉,
+	서브메뉴들을 의미.
+*/
+ul ul {
+	display:none;	/* 서브 메뉴들이 전부 숨겨진다. */
+}
+
+/* 모든 아이템들 중 마우스 오버되는 것들을 선택 */
+ul li:hover {	/* element:hover    -> 마우스가 올려진 element 태그를 뜻함 */
+	background-color:gold;
+}
+
+/* 마우스 오버된 메뉴의 서브메뉴가 선택됨 */
+ul li:hover > ul {
+	background-color:blue;
+}

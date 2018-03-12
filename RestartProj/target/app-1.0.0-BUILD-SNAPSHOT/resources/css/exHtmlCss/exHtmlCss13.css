@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+
+/* float의 부작용1 */
+
+section {
+	background-color:yellow;
+}
+
+section > div {
+	float:left;		/* section의 height가 0이 됨.(자식의 크기와도 상관없음) */
+}
+
+/* 위 float 문제를 해결하기위해 */
+section::after {	/* section의 막내 자식을 하나 추가하는 기능 */
+	content:"";
+	display:block;
+	clear:both;
+}

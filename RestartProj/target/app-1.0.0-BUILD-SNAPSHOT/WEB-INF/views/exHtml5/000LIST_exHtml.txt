@@ -1,0 +1,59 @@
+exHtml01 - 글자관련 태그1
+exHtml02 - 글자관련 태그2 - 텍스트 꾸미기
+exHtml03 - 경로와 이미지
+exHtml04 - 링크 태그
+exHtml05 - 목록 태그
+exHtml06 - 테이블 태그1
+exHtml07 - 테이블 태그2
+exHtml08 - 공간분할, 시멘틱 태그
+exHtml09 - 오디오/비디오 태그
+exHtml10 - 입력양식 태그1 - form 태그
+exHtml11 - 입력양식 태그2 - input, textarea, select
+
+
+1. 웹역사 및 HTML5의 등장
+-브라우저의 종류
+오페라 : 유럽. 빠른속도, 작은 용량
+사파리 : 애플, 빠른속도, 모바일에서 많이 사용
+크롬 : 구글, 다른 브라우저와 호환이 떨어짐. 가장 최근에 나옴
+파이어폭스 : ActiveX를 우회하여 적용가능함. 
+익스플로러 : 윈도우 설치 시 끼워서 같이 됨. ActiveX를 사용하여 플러시 기능. 그러나 너무 무거움 
+
+2. 웹표준의 필요
+
+3. HTML5의 특징
+
+4. HTML5의 새로운 태그
+	- section
+	- article
+	- aside
+	- hgroup : 
+	- header : 기존에 있는 head와 다른것으로 body 태그안에 들어가는 태그이다.
+	- footer
+	- nav
+	- figure, figcaption : 이미지나 비디오태그에 캡션을 붙이는 기능
+	- audio, video
+	- embed : 플러그인 컨텐츠를 표시하는 태그
+	- mark : 형광펜 효과
+	- progress : 진행바
+	- meter : 측정값
+	- time
+	- ruby : 설명글을 나타내는 루비글자를 나타낸다.
+	- canvas : 웹상에 그래픽
+	- command : 
+	- details : 
+	- datalist : 
+	- keygen
+	- output : 수학적인 계산의 결과
+
+5. HTML5의 변경된 태그
+
+6. HTML5의 중단된 태그
+	- basefont : 기본글꼴. HTML5에서는 css로 설정해준다.
+	- big : 글자를 조금 크게
+	- center : 가운데 정렬
+	- font
+	- frame, frameset, noframe : HTML5에서는 table로 대체해 사용
+	- s, strike : 취소선
+	- tt : 타자기체
+	- u : 밑줄

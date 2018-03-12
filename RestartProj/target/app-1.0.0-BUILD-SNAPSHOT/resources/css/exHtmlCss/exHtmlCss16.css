@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+
+ul, li {
+	margine:0;
+	padding:0;
+	list-style:none;
+}
+a {
+	color:inherit;
+	text-decoration:none;
+}
+/* 노말라이즈 */
+
+ul li {
+	width:200px;
+	background-color:gray;
+}
+
+ul li:hover {
+	background-color:black;
+	color:white;
+}
+
+ul li a {	/* 링크 태그이므로 해당 버튼공간태그(li)만큼 꽉 차게 하기위해 */
+	display:block;
+	padding:10px;	/* padding도 마찬가지로 li가 아닌 a태그에다가 적용시켜준다. */
+}

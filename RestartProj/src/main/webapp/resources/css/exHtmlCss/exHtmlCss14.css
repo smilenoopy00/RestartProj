@@ -1,0 +1,46 @@
+@CHARSET "UTF-8";
+
+/* ::before, after : 여러개의 태그에 동일한 content를 붙여 주기 위해 사용 */
+/* 콜론(:) 두개가 들어가는 이유는 바로 앞 태그에 적용하는 것이 아닌 그 태그의 텍스트에 적용할 것이라는 것을 의미.
+	콜론 두개사용은 현재까지 before와 after밖에 없음. */
+	
+section > div::before {
+	content:"-";
+}
+
+section > div::after {
+	content:"*";
+}
+
+
+
+
+
+ul, li{
+	list-style:none;
+	padding:0;
+	margine:0;
+}
+/* 노말라이즈 */
+
+ul > li::after {
+	content:'님';
+}
+
+
+
+
+
+/* [section > *]    -> section 태그의 모든 자식태그들을 뜻함. */
+section > span {	/* span태그의 display 기본값은 inline-block */
+	display:block;
+	background-color:red;
+}
+
+section.ex::after{		/* after로 새로 생겨난 것은 display 기본값이 inline-block */
+						/* after로 새로 생겨난 것이 section안에 속하더라도 section 자식들에 적용된 style은 적용되지않는다. */
+	content:"4";
+	background-color:red;
+	display:block;	/* 새로 생겨난 것에도 적용시키려면 이렇게 여기다가 적어줘야함 */
+}
+

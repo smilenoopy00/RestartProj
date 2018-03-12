@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>테이블 태그2</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<table width="600" height="600" border="1" cellpadding="0" cellspacing="0">
+		
+			<caption><h2>테이블의 제목</h2></caption>	<!-- caption : 테이블에 속한 제목입력 시 사용 -->
+			
+			<tr>
+				<th>제목</th>	<!-- td와 같은 레벨이지만 조금 특별한 의미를 가지는 컬럼을 뜻함(굵고 가운데정렬됨) -->
+				<th>제목</th>
+				<th>제목</th>
+			</tr>
+			<tr>
+				<td>row_2 내용1</td>
+				<td>row_2 내용2</td>
+				<td>row_2 내용2</td>
+			</tr>
+			<tr>
+				<td>row_3 내용1</td>
+				<td>row_3 내용2</td>
+				<td>row_3 내용2</td>
+			</tr>
+		</table>
+		
+		<h2>테이블의 영역 구분해주기</h2>
+		<table width="600" height="600" border="1" cellpadding="0" cellspacing="0">
+		
+			<caption><h2>테이블의 제목</h2></caption>
+			
+			<thead>	<!-- 테이블의 제목영역이라는 의미를 부여해줌 -->
+				<tr>
+					<th>제목</th>
+					<th>제목</th>
+					<th>제목</th>
+				</tr>
+			<thead>
+			
+			<tbody>	<!-- 테이블의 본문영역이라는 의미를 부여해줌 -->
+				<tr>
+					<td>내용</td>
+					<td>내용</td>
+					<td>내용</td>
+				</tr>
+			</tbody>
+			
+			<tfoot>	<!-- 테이블의 마무리영역이라는 의미를 부여해줌 -->
+				<tr>
+					<td colspan="3">아래쪽 내용</td>
+				</tr>
+			</tfoot>
+		</table>
+		
+		
+	</body>
+</html>

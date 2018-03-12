@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+body > div, body > section {
+	/* 기본값 block : 한 줄전체를 해당 태그가 다 사용한다. */
+	/* inline-block : 해당 태그를 글자처럼 취급한다.*/
+	/* inline : ... */
+	/* none : 해당 태그의 공간을 아예 없애버려서 화면에서 사라지게한다.*/
+	display:inline-block;
+	background-color:red;
+	margine:10px;	/* 해당 element의 바깥 여백 */
+}

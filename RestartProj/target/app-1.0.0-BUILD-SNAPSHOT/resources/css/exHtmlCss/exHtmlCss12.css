@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+
+/* div의 width, height 속성 기본값은? */
+/* 둘다 auto(상황에 따라 값이 변경되는것) */
+/* ex) display:block;이면 width는 100%처럼 작동함. 
+	   display:inline-block;이면 width는 최소한으로 작아짐 */
+
+div:nth-child(1) {
+	background-color:blue;
+	height:5px;		/* div 자식 태그의 크기(텍스트 등등)보다 더 작게 설정하는 경우 넘칠 수 있다. */
+}
+
+/* div와 같은 block요소들은 자신의 형 태그(바로앞태그)가 끝나는 지점부터 시작한다. 
+	즉, 바로 위 태그의 height가 5px이므로 그안에 텍스트가 겹치는건 상관없이 바로 시작한다. */
+div:nth-child(2) {	/* 앞에 body가 생략되어있으므로 body태그 안에서 두번째 자식을 선택한다.
+						(만약 그 두번째 자식이 div태그가 아니라면 선택되는 것은 없다.) */
+	background-color:red;
+	
+}
+
+
+section {
+	background-color:yellow;
+}
+
+section > div {
+	display:inline-block;
+}

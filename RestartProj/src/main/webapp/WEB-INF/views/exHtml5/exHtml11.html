@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>입력양식 태그2</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<!-- #input태그 -->
+		<h2>input 태그</h2>
+		<!-- <input type="타입형태" name="input태그의 이름 설정" value="서버로 넘기는 값"/> -->
+		
+		<input type="hidden"/>	<!-- 사용자에게 보이지 않지만 서버로 넘겨지는 값 -->
+		
+		1. 한줄짜리 텍스트 상자<br/>
+		<input type="text" name="id" value="아이디입력" size="30" maxlength="5"/><br/>
+		<!-- name : 서버에서 인식할 수 있는 이름.
+			 value : 서버로 넘어가는 실제 값. 입력할 경우 브라우저상에서 보여진다.
+			 size : text상자의 크기. 
+			 maxlength : 입력할 수 있는 글자 갯수. 한글도 현재 5글자 가능.
+		 -->
+		
+		2. 검색상자
+		<input type="search"/><br/>
+		
+		3. 전화번호 상자
+		<input type="tel"/><br/>
+		
+		4. url
+		<input type="url"/><br/>
+		
+		5. email
+		<input type="email"/><br/>
+		
+		6. 비밀번호
+		<input type="password"/><br/>
+		
+		7. 숫자 상자
+		<input type="number"/><br/>
+		
+		8. 조절막대
+		<input type="range"/><br/>
+		
+		9. 색상선택표
+		<input type="color"/><br/>
+		
+		10. 체크박스
+		<input type="checkbox" id="ch_box1"/><label for="ch_box1">체크박스 내용1</label>
+		<input type="checkbox" id="ch_box2"/><label for="ch_box2">체크박스 내용2</label>
+		<input type="checkbox" id="ch_box3"/><label for="ch_box3">체크박스 내용3</label><br/>
+		<!-- <label> : 텍스트를 선택해도 해당 체크박스가 선택되도록 해준다.
+			 id : 디자인용으로 주로 사용되는 해당 태그의 유일한 이름으로 사용. 중복사용 불가
+			 		(name은 주로 서버용)
+		-->
+		
+		11. 라디오버튼
+		<input type="radio" id="rd_box1" name="ra_box"/><label for="rd_box1">라디오 버튼1</label>
+		<input type="radio" id="rd_box2" name="ra_box"/><label for="rd_box2">라디오 버튼2</label>
+		<input type="radio" id="rd_box3" name="ra_box"/><label for="rd_box3">라디오 버튼3</label><br/>
+		<!-- name : 그룹명으로도 사용됨. 라디오버튼 결과 값은 하나만 서버로 전송되어야하므로. -->
+		
+		12. 날짜 상자
+		<input type="datetime"/><br/>
+		<!-- (연,월,일,시,분,초) -->
+		
+		13. 로컬날짜 상자
+		<input type="datetime-local"/><br/>
+		<!-- 사용자가 있는 지역을 기준으로 날짜와 시간 표시 -->
+		
+		14. 연,월,일 상자
+		<input type="date"/><br/>
+		<!-- 사용자가 있는 지역을 기준으로 날짜(연,월,일) -->
+		
+		15. 연,월 상자
+		<input type="month"/><br/>
+		<!-- 사용자가 있는 지역을 기준으로 날짜(연,월) -->
+		
+		16. 연,주 상자
+		<input type="week"/><br/>
+		<!-- 사용자가 있는 지역을 기준으로 날짜(연,월) -->
+		
+		17. 시간 상자
+		<input type="time"/><br/>
+		
+		18. 버튼 상자
+		<input type="button"/><br/>
+		
+		19. 파일 상자
+		<input type="file"><br/>
+		<!-- 파일선택 다이얼로그를 띄워준다. -->
+		
+		20. 제출 버튼
+		<input type="submit"/><br/>
+		<!-- 서버로 데이터 전송 -->
+		<!-- 대부분의 브라우저에서 <button></button> 태그에 타입을 정하지않으면 submit으로 인식한다. -->
+		
+		21. 이미지 버튼<br/>
+		<input type="image" src="img/coffee.gif"/><br/>
+		
+		22. 리셋 버튼
+		<input type="reset"/><br/>
+		<!-- 초기화 기능 -->
+		
+		
+		<!-- input 태그 외 여러 폼 태그들 -->
+		
+		<h2>멀티라인 텍스트 상자</h2>
+		<textarea cols="50" rows="10" maxlength="10"></textarea>
+		<!-- cols, rows : 화면에 보여지는 상자의 크기. 
+			 maxlength : 입력할 수 있는 글자 갯수 -->
+		<!-- 스타일 값으로 스크롤 제어가능
+			style="overflow-y:hidden" : 세로숨김  
+			style="overflow-y:scroll" : 세로보임
+			style="overflow-x:hidden" : 가로숨김
+			style="overflow-x:scroll" : 가로보임
+			style="overflow:hidden" : 모두숨김
+			style="overflow:scroll" : 모두보임
+		 -->
+		 
+		 
+		<h2>드롭다운 목록 상자</h2>
+		<select size="2" multiple>	<!-- size : 화면에 기본적으로 보여주고싶은 높이 사이즈
+										 multiple : 다중선택가능
+									-->
+			<option>과일이름</option>
+			<option>사과</option>
+			<option>바나나</option>
+			<option>메론</option>
+		</select><br/>
+		<!-- 그룹형태 -->
+		<select size="8" multiple>	
+			<optgroup label="과일목록1">	<!-- 선택박스 내에서 그룹으로 묶어 선택할 수 없는 항목 -->
+				<option>사과</option>
+				<option>바나나</option>
+				<option>메론</option>
+			</optgroup>
+			<optgroup label="과일목록2">
+				<option>사과</option>
+				<option>바나나</option>
+				<option>메론</option>
+			</optgroup>
+		</select>
+		
+		<h2></h2>
+	</body>
+</html>

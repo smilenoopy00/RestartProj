@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+/* 음수마진 응용 */
+
+
+section {
+	max-width:970px;
+	margine:0 auto;
+	border:10px solid gold;
+}
+section::after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+section div {
+	float:left;
+	width:50%;
+	height:100px;
+	background-color:red;
+	/* margin:0 20px;		/* 두 div사이에 공간을 주려고 margin 또는 padding, border를 넣어주면
+							   이미 width가 50%로 설정되어있기때문에 그 이상이 되어 
+							   현재 float상태이므로 두번째 div가 아래로 밀려 내려오게된다. */
+	border:0 solid black;
+	border-width:0 15px;
+	box-sizing:border-box;	/* margin 등으로 인한 사이즈변경을 막아주어 두번째 div가 내려가지 않도록 해준다. */
+}
+
+section div:last-child {	/* after로 생성된애가 아닌 실제 막내 div를 선택한다. */
+	background-color:blue;
+}
+
+section article {
+	margin:0 -15px;		/* 음수마진을 통해 양쪽 필요없는 부분을 바깥으로 밀어내준다. */
+}

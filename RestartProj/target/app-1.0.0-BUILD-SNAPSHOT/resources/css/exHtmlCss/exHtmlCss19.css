@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+div.a, div.b {
+	height:250px;
+	background-color:blue;
+	margine:10px;
+	width:500px;
+	display:inline-block;
+}
+
+div.b {		
+	background-color:green;
+	padding:50px;
+	border:50px solid gold;
+	/* 위의 두 속성은 반응형 그리드에서 좋지않은 속성들임. */
+	
+	box-sizing:border-box;	/* width와 height를 우선시하고 padding과 border의 값들만큼 안으로 파고들어 적용시킨다. */
+}
+
+
+
+body {
+	text-align:center;		/* 이렇게 해줘도 div.container는 block요소 이기때문에 가운데 정렬되지않는다. */
+}
+
+div.container {
+	height:500px;
+	background-color:gray;
+	max-width:980px;	/* 앞에 max를 써주면 브라우저 크기가 줄어들더라도 가로 스크롤바가 생기지 않는다. */
+	margin:0 auto;		/* 이렇게 해주거나 display:inline-block 해줘야 가운데 정렬이 적용된다. */
+}
+

@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+
+/* float의 부작용2 */
+
+article.ex1 > div {
+	height:100px;
+	background-color:blue;
+	width:15%;
+	display:block;
+	float:left;
+}
+
+article.ex1 {	/* 현재 article의 자식 태그(div)에 텍스트가 하나도 없는 상태에서
+				float:left 설정되었으므로 article의 height는 0인 상태이다. */
+	background-color:red;
+	/* height:100px;	 그래서 이렇게 높이를 설정해 줘야지만 화면에 공간을 차지한다. */
+}
+
+article.ex1 > section {
+	background-color:gold;
+	clear:both; /* float 속성 적용한 태그들의 줄바꿈을 할때 사용한다. */
+	/* 텍스트들 간의 줄바꿈에서 <br>태그를 붙여 주는 것 처럼 */
+	/* 여기서는 새로운 element(section태그)를 추가해서 clear:both;속성을 적용시켜준다. */
+}
+
+
+article.ex2 > div {
+	height:100px;
+	background-color:blue;
+	width:15%;
+	display:block;
+	float:left;
+}
+
+article.ex2 {
+	background-color:red;
+}
+
+article.ex2 > section {	/* article태그의 막내태그(section) */
+	background-color:gold;
+	clear:both;
+	display:block;
+}
+/* 바로 위 style과 동일한 막내태그 추가하는 다른 방식 */
+/*
+article.ex2::after {
+	content:"";
+	clear:both;
+	display:block;
+}
+*/

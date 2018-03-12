@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+/*
+태그선택자에 의해 section만 적혀있으므로
+section 태그에 해당하는 텍스트에만 적용되고
+section 안에 있는 다른 태그들은 적용되지 않는다.
+그러나 현재 section태그 안에 div라는 자식태그가 존재하므로
+div 태그에 해당하는 텍스트들의 색깔도 같이 변경된다.
+이유 : div태그의 color속성 기본값이 inherit 이기 때문!
+*/
+section { 
+	color:red;
+}
+
+
+/* 일반적으로 color, text-align, font-size 등의 속성 기본값은 inherit 이다.
+inherit : 부모태그의 color값을 따라가겠다는 것을 의미.
+따로 지정을 해줘야만 다른 값을 가질수 있다.
+*/

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Frame 객체 연습 - Left 페이지</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		
+	function changeColor(color){
+		// parent : 여기서는 exJs13.html 윈도우를 의미함.
+		// left : name값이 left인 윈도우를 의미함. 여기서는 exFrameLeft.html
+		parent.left.document.bgColor = color;
+	}
+		
+	</script>
+</head>
+<body>
+	<a href="javascript:changeColor('green')">배경색을 바꿉니다.</a>
+</body>
+</html>

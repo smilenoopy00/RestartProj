@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color:gray;
+}
+
+div.a {
+	min-width:100px;
+	min-height:200px;
+	background-color:inherit;
+	border:10px solid black;
+}
+
+/* 1000이상이고 1200이하 */
+/* or조건은 문법에 없다. */
+@media (min-width: 1000px) and (max-width: 1200px) {
+	body {
+		background-color:orange;
+	}
+}
+
+@media (max-width: 1000px){
+	body {
+		background-color:yellow;
+	}
+}
+
+@media (max-width: 800px) {
+	body {
+		background-color:green;
+	}
+}
+
+@media (max-width: 600px) {
+	body {
+		background-color:blue;
+	}
+}

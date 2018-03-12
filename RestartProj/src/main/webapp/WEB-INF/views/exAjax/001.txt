@@ -1,0 +1,44 @@
+AJAX(Asynchronous Javascript + Xml)
+: 서버측 Stripts와 통신하기위해 XMLHttpRequest 객체를 사용하는 것을 말한다.
+웹에서 사용하는 모든 언어는 Ajax기술을 사용할 수 있다.
+단, 자바스크립트가 지원되지 않는 브라우저에서는 사용될 수 없다.
+서버측으로 다양한 형식(json, xml, html, 일반 텍스트 형식 등)의 정보를 주고 받을 수 있다.
+Ajax는 웹서버와 브라우저 사이에 Ajax 엔진 하나가 더 위치하게 된다.
+
+Ajax에서 사용하는 주요기술들
+- HTTP 통신
+- HTML/XHTML
+- XML
+- DHTML
+- Javascript
+- CSS
+- Dom
+- 서버스크립트(asp, jsp, php)
+
+
+XML이란
+- HTML과 같은 마크업 언어이다.
+- HTML과 달리 태그가 미리 정의되어있는 것이 아닌 사용자가 직접 정의해서 사용한다.
+
+JSON이란
+- JavaScript Object Notation의 약자로 데이터(js객체)를 교환할 때 사용하는 형식이다.
+- 자바스크립트 언어의 구문형식을 가지고있다.
+- 두가지 기본 구조를 가진다.
+	1. name/value의 형식을 가지는 collection타입. 객체를 뜻한다.
+	   value 값으로는 string, number, object, array, true, false, null이 올 수 있다.
+	   number는 10진수만 사용. 
+	   ex) {"name" : "홍길동", "age" : 20, "address" : "강남구 삼성동"}
+	   
+	2. 값들의 순서화된 리스트 구조. 배열, 리스트를 뜻한다.
+	   ex1) ["홍길동", {"나이":20, "남자":true}, "청년"]
+	   ex2) {
+	   			"이름" : "홍길순",
+	   			"여자" : true,
+	   			"주소" : "강남구 삼성동"
+	   			"특징" : ["여", "간호사출신", "예쁨"],	// collection안에 배열이 들어간 형태
+	   			"나이" : 20
+	   		}
+	   		
+	   		
+	   		
+	   		

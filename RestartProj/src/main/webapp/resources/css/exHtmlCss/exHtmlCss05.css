@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+/* ul,ol,li 태그를 사용하게되면 브라우저가 기본적으로 스타일을 제공해준다. */
+/* 노말라이즈 : 기본제공 스타일을 제거시켜준다. */
+ul, li{
+	list-style:none;
+	padding:0;		/* padding : element의 안쪽여백 */
+	margin:0;		/* margin : element의 바깥여백 */
+}

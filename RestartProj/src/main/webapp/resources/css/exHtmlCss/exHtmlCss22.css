@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+/* 음수마진 */
+
+/* margin : 태그 주변에 다른 태그가 올수있는 공간의 크기를 주는것. 
+	-> 두개의 div태그에 각각 margin 값을 10px으로 주더라도
+	   두 태그의 떨어진 크기는 20px이 아닌 10px이 된다.
+   음수마진 : 지정한 크기만큼 내 공간을 허락해주는것.
+   			-> 지정한 크기만큼 내 공간은 부분 유령화가된다.   
+
+*/
+
+section.a {
+	width:500px;
+	height:500px;
+	border:10px solid red;
+	margin:0 auto;
+}
+
+section.a div {
+	width:auto;
+	height:80%;
+	background-color:gray;
+	/* margin:10px;		/* 마진 크기만큼 부모태그 크기에서 안으로 점점 들어오게된다. */
+	margin:0 -30px;
+}

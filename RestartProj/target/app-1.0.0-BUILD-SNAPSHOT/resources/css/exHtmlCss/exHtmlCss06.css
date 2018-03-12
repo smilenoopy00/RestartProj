@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+
+/* 
+element :nth-child(n)    				-> element태그의 n번째 자식 선택
+element :first-child    				-> element태그의 첫번째 자식 선택 == nth-child(1)
+
+element :nth-last-child(n)    			-> element태그의 끝에서부터 n번째 자식 선택
+element :last-child    					-> element태그의 마지막 자식 선택 == nth-last-child(1)
+
+element1 element2:nth-child(n)    		-> element1태그의 자식 중 element2태그이면서 n번째 자식 선택
+
+element1 element2:nth-of-type(n)    	-> element1태그의 자식 중 element2태그 중 n번째 선택
+element1 element2:first-of-type    		-> element1태그의 자식 중 element2태그 중 첫번째 선택 == nth-of-type(1)
+
+element1 element2:nth-last-of-type(n)   -> element1태그의 자식 중 element2태그 중 끝에서 n번째 선택
+element1 element2:last-of-type    		-> element1태그의 자식 중 element2태그 중 마지막 선택 == nth-last-of-type(1)
+*/
+section div:nth-child(1){	/* section의 자식중 div이면서 첫번째 자식에게 적용. 현재 적용되지 않는 이유 : 첫번째 자식이 span이기때문*/
+	color:red;
+}
+
+
+/* "다음"이라는 li가 선택되어 해당 태그를 숨긴다. */
+ul > li:nth-child(2) {
+	display:none;
+}
+
+/* "다음"이라는 li태그의 자식 중 a태그가 선택된다. */
+ul > li:nth-child(1) > a{
+	color:gold;
+}

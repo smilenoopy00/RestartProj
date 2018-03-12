@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+/**** position 속성 ****/
+/*
+속성값
+absolute : 유령화. 선택된 해당 태그는 다른 style에 아무런 영향도 받지않는다.
+*/
+
+section {
+	background-color:red;
+	position:relative;	/* 해당 태그안에 유령이 존재하는 경우 현재 태그를 유령의 집으로 만듬 */
+}
+
+section > div:last-child {
+	position:absolute;	/* 유령화한 경우 다른 태그들에도 아무런 영향을 미치지 않는다. */
+	top:0;				/* 유령화한 경우 이 유령의 집은 화면 전체(body태그 공간)가 된다. */
+	left:0;
+	background-color:gold;
+	font-size:50px;
+}
+

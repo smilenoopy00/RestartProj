@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+
+/* float 속성 */
+/* 최대한 올라가고 최대한 오른쪽(또는 왼쪽)으로 붙는다. */
+/* 기본값 : none; */
+
+nav, ul, li{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+a{
+	color:inherit;
+	text-decoration:inherit;
+}
+/* 노말라이즈 */
+
+ul li {
+	display:inline-block;
+	width:25%;	/* 각 li는 부모태그(여기서는 ul)의 width의 25%를 차지하는것을 의미 */
+	background-color:blue;
+}
+
+
+/* display:block + float:left 속성은
+	공백무시 + display:inline-block => (한줄에 다 붙어 나오기)와 같다. */
+section {
+	display:block;
+	float:left;
+}

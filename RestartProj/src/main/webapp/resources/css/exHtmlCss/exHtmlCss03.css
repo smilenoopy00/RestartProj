@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+/* 타입(태그)선택자 */
+body > section > article > div {	/* 자식 선택자. style 적용은 맨 왼쪽에 있는 div에만 적용된다.*/
+	color:red;
+}
+
+/* Id 선택자 */
+#a1 {	/* div.a1 : div태그에 해당하는 a1 에만 적용된다. */
+	color:blue;
+	font-size:200px;
+}
+
+/* Class 선택자 */
+.a2 {	/* div.a2 : div태그에 해당하는 a2 에만 적용된다. */
+	background-color:yellow;
+}

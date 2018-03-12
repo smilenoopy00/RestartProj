@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+
+/**** position 속성 ****/
+
+
+/* 노말라이즈 */
+nav, ul, li{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+a{	/* 특색을 띄지 않도록 inherit 속성값을 줌. */
+	color:inherit;
+	text-decoration:inherit;
+}
+
+/* 1차 메뉴 아이템 */
+nav.top-menu > ul > li {	/* class 값 top-menu를 가진 태그들 중에 nav 태그인 것들 선택 */
+	display:inline-block;	/* li의 display속성 기본값 : block */
+	background-color:gold;
+}
+
+/* 1차 메뉴 */
+nav.top-menu > ul {
+	background-color:blue;
+	display:inline-block;
+}
+
+/* 서브 메뉴들 */
+nav.top-menu ul ul{
+	display:none;
+	position:absolute;	/* 유령화 처리 */
+	top:100%;
+	left:0;
+}
+
+/* 1차 메뉴의 아이템들 */
+nav.top-menu li{
+	position:relative;	/* 각 1차 메뉴의 아이템들을 유령의 집으로 설정 */
+}
+
+/* 마우스오버 된 모든 li태그의 자식 ul을 선택한 후 다시 보이도록 처리 */
+nav.top-menu li:hover > ul {
+	display:block;
+}
+
+nav.top-menu {	
+	text-align:center;
+}
+
+nav.top-menu a {
+	white-space:nowrap;		/* 절대 줄 바꿈하지 마세요 라는 뜻 */
+}
+

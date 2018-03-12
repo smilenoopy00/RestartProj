@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>링크 태그</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<a href="http://www.naver.com">1. 이미 만들어져있는 링크로 이동</a><br/>
+		
+		<!-- 2. 이미지로 이동 -->
+		<a href="http://www.naver.com">
+			<img src="img/naver.jpg"/>
+		</a><br/>
+		
+		<a href="sub/sub.html">3. 내가 만든 sub 페이지로 이동하기</a><br/>
+		
+		<a href="sub/sub.html" target="blank">4. 새탭으로 이동하기</a><br/>
+		
+		<a href="sub/sub.html" title="링크에 대한 요약 표시">5. title 속성</a><br/>
+		
+		
+		6. 한페이지 내에서 스크롤이 긴 경우 원하는 위치로 이동하기<br/>
+		<a href="#content_1">content_1 이동</a>
+		<a href="#content_2">content_2 이동</a>
+
+		<a name="content_1">	<!-- 한페이지 내 이동할때도 a태그를 사용하여 name속성을 이용한다. -->
+			<h1>content_1 내용부분</h1>
+			<img src="img/sky.jpg"/>
+		</a>
+		<a name="content_2">	<!-- 한페이지 내 이동할때도 a태그를 사용하여 name속성을 이용한다. -->
+			<h1>content_2 내용부분</h1>	<!-- 원래는 h1태그는 상단 위치에서 사용되는게 일반적이다. -->
+			<img src="img/coffeebean.jpg"/>
+		</a>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+
+
+div.a {
+	background-color:blue;
+	font-size:50px;
+	text-align:right;
+}
+
+/*
+div.a {
+	color:red;			/* 한 태그에 이렇게 다른 속성인 경우에는 문제없이 적용되지만
+	font-size:50px;		/* 같은 속성이 중복해서 적용되는 경우에는 아래에 적힌 속성이 적용된다.
+}
+*/
+
+/* 미디어 쿼리 */
+@media (max-width: 500%) {
+	div.a {
+		color:red;
+		text-align:left;
+	}
+}
+
+
+body {
+	background-color:gray;
+}
+
+@media (min-width: 1200px) {
+	body {
+		background-color:orange;
+	}
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>테이블 태그1</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<table width="200" height="200" border="1" cellpadding="0" cellspacing="0">	<!-- 실제 화면상에 보여지게하기위해선 크기와 선두께(border)를 주어야한다. html에서는 px단위 생략가능 -->
+		<!-- width, height : table 전체의 크기, cellpadding : 테두리와 내용 사이의 공간크기, cellspacing : 테두리와 셀 사이의 공간크기 -->
+			<tr>	<!-- 행 -->
+				<td></td>	<!-- 열 -->
+			</tr>
+		</table>
+		
+		<table width="200" height="400" border="1" cellpadding="10" cellspacing="50">
+			<tr>
+				<td>row_1 내용</td>	<!-- 각 로우의 td 개수는 같아야한다. -->
+			</tr>
+			<tr>
+				<td>row_2 내용</td>
+			</tr>
+		</table>
+		
+		<h1>한줄의 두칸</h1>
+		<table width="400" height="200" border="1" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>row_1 내용1</td>
+				<td>row_1 내용2</td>
+			</tr>
+		</table>
+		
+		<h1>두줄의 두칸</h1>
+		<table width="400" height="400" border="1" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>row_1 내용1</td>
+				<td>row_1 내용2</td>
+			</tr>
+			<tr>
+				<td>row_2 내용1</td>
+				<td>row_2 내용2</td>
+			</tr>
+		</table>
+		
+		<h1>가로합치기</h1>
+		<!--
+			1. 먼저만나는 td에 colspan 입력
+			=> colspan="합칠 컬럼 개수"
+			2. 합쳐지는 td 삭제
+		-->
+		<table width="400" height="400" border="1" cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="2">1</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+		</table>
+		
+		<h1>세로합치기</h1>
+		<!--
+			1. 먼저만나는 td에 rowspan 입력
+			=> colspan="합칠 컬럼 개수"
+			2. 합쳐지는 td 삭제
+		-->
+		<table width="400" height="400" border="1" cellpadding="0" cellspacing="0">
+			<tr>
+				<td rowspan="2">1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>4</td>
+			</tr>
+		</table>
+	</body>
+</html>

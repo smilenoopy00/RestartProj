@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+body{
+	color:red;
+	font-size:100px;	
+}
+
+div section{
+	color:blue;
+	font-size:100px;	
+}
+
+/*자식 선택자를 썼으므로 body 바로 아래에있는 태그들에만 적용된다.
+'>' 앞뒤로 공백은 써도되고 안써도 상관없다.
+*/
+body > section{
+	font-size:150px;
+}
